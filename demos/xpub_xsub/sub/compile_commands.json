@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/shlian/demo/zeromq/xpub_xsub/sub/build",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq/xpub_xsub/sub/. -I/home/shlian/3rd/boost_1_74_0  -g3 -rdynamic -std=c++11   -o CMakeFiles/sub.dir/main.cpp.o -c /home/shlian/demo/zeromq/xpub_xsub/sub/main.cpp",
+  "file": "/home/shlian/demo/zeromq/xpub_xsub/sub/main.cpp"
+}
+]

@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+message Heartbeat{
+    enum ServiceType{
+        pricing=0;
+        trading=1;
+    }
+    string id=0;
+    string name=1;
+    string endpoint=2;
+    ServiceType type=3;
+    string version=4;
+}
+
+
+
+
+
+
+
+message OnlineInfo{
+    string id=0;
+    string name=1;
+    string endpoint=2;
+    ServiceType type=3;
+    string version=4;
+    uint64 time_stamp=5;
+}
+
+message ServiceList{
+    repeated  OnlineInfo value;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/shlian/demo/zeromq/pub_broker_sub/pub/build",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq/pub_broker_sub/pub/. -I/home/shlian/demo/zeromq/pub_broker_sub/pub/..  -g3 -rdynamic -std=c++11   -o CMakeFiles/pub.dir/pub_main.cpp.o -c /home/shlian/demo/zeromq/pub_broker_sub/pub/pub_main.cpp",
+  "file": "/home/shlian/demo/zeromq/pub_broker_sub/pub/pub_main.cpp"
+}
+]
