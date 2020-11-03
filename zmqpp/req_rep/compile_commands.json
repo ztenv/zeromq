@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/shlian/demo/zmqpp_demo/req_rep/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zmqpp_demo/req_rep/. -I/home/shlian/demo/zmqpp_demo/req_rep/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/request.dir/request.cpp.o -c /home/shlian/demo/zmqpp_demo/req_rep/request.cpp",
+  "file": "/home/shlian/demo/zmqpp_demo/req_rep/request.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zmqpp_demo/req_rep/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zmqpp_demo/req_rep/. -I/home/shlian/demo/zmqpp_demo/req_rep/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/request.dir/home/shlian/demo/zmqpp_demo/include/common.cpp.o -c /home/shlian/demo/zmqpp_demo/include/common.cpp",
+  "file": "/home/shlian/demo/zmqpp_demo/include/common.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zmqpp_demo/req_rep/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zmqpp_demo/req_rep/. -I/home/shlian/demo/zmqpp_demo/req_rep/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/reply.dir/reply.cpp.o -c /home/shlian/demo/zmqpp_demo/req_rep/reply.cpp",
+  "file": "/home/shlian/demo/zmqpp_demo/req_rep/reply.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zmqpp_demo/req_rep/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zmqpp_demo/req_rep/. -I/home/shlian/demo/zmqpp_demo/req_rep/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/reply.dir/home/shlian/demo/zmqpp_demo/include/common.cpp.o -c /home/shlian/demo/zmqpp_demo/include/common.cpp",
+  "file": "/home/shlian/demo/zmqpp_demo/include/common.cpp"
+}
+]
