@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/. -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/pub.dir/pub.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/pub_sub/pub.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/pub.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/. -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/pub.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/. -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/sub.dir/sub.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/pub_sub/sub.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/sub.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/. -I/home/shlian/demo/zeromq_demo/zmqpp/pub_sub/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/sub.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+}
+]

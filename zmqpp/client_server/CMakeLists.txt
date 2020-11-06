@@ -1,6 +1,7 @@
 cmake_minimum_required( VERSION 3.8 FATAL_ERROR)
-project(request LANGUAGES CXX)
+project(client LANGUAGES CXX)
  
+option(ZMQ_BUILD_DRAFT_API "" ON)
 #set dirs
 set(PROJECT_ROOT ${CMAKE_CURRENT_LIST_DIR})
 message("project dir:${PROJECT_ROOT}")
@@ -28,12 +29,12 @@ include_directories(./ ../include/
 link_directories(${BIN_DESTINATION})
  
 #execute 
-SET(SRC_MAIN request.cpp ../include/common.cpp)
+SET(SRC_MAIN client.cpp ../include/common.cpp)
 add_executable( ${PROJECT_NAME} ${SRC_MAIN})
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})    
 target_link_libraries(${PROJECT_NAME} pthread zmq zmqpp gflags)
 
-add_executable(reply reply.cpp ../include/common.cpp)
-set_target_properties(reply PROPERTIES VERSION ${PROJECT_VERSION})    
-target_link_libraries(reply pthread zmq zmqpp gflags)
+add_executable(server server.cpp ../include/common.cpp)
+set_target_properties(server PROPERTIES VERSION ${PROJECT_VERSION})    
+target_link_libraries(server pthread zmq zmqpp gflags)
 

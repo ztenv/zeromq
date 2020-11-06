@@ -1,5 +1,5 @@
 cmake_minimum_required( VERSION 3.8 FATAL_ERROR)
-project(client LANGUAGES CXX)
+project(xpub LANGUAGES CXX)
  
 #set dirs
 set(PROJECT_ROOT ${CMAKE_CURRENT_LIST_DIR})
@@ -28,12 +28,12 @@ include_directories(./ ../include/
 link_directories(${BIN_DESTINATION})
  
 #execute 
-SET(SRC_MAIN client.cpp ../include/common.cpp)
+SET(SRC_MAIN xpub.cpp ../include/common.cpp)
 add_executable( ${PROJECT_NAME} ${SRC_MAIN})
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})    
 target_link_libraries(${PROJECT_NAME} pthread zmq zmqpp gflags)
 
-add_executable(server server.cpp ../include/common.cpp)
-set_target_properties(server PROPERTIES VERSION ${PROJECT_VERSION})    
-target_link_libraries(server pthread zmq zmqpp gflags)
+add_executable(xsub xsub.cpp ../include/common.cpp)
+set_target_properties(xsub PROPERTIES VERSION ${PROJECT_VERSION})    
+target_link_libraries(xsub pthread zmq zmqpp gflags)
 
