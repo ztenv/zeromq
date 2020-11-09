@@ -67,7 +67,6 @@ bool front_proxy(zmqpp::socket &xpub_socket,zmqpp::socket &xsub_socket)
         topic.append(msg.get(0));
         res=xsub_socket.send(topic);
     }
-    LOG_INFO("res="<<res);
     return res;
 }
 
