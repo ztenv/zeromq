@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/. -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/push.dir/push.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/push_pull/push.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/push.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/. -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/push.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/. -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/pull.dir/pull.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/push_pull/pull.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/pull.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/push_pull/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/. -I/home/shlian/demo/zeromq_demo/zmqpp/push_pull/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/pull.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+}
+]
