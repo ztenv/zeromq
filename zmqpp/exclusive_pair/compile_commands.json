@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/. -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/client.dir/client.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/client.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/client.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/. -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/client.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/. -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/server.dir/server.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/server.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/server.cpp"
+},
+{
+  "directory": "/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/cmake-build-debug",
+  "command": "/usr/bin/c++   -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/. -I/home/shlian/demo/zeromq_demo/zmqpp/exclusive_pair/../include  -g3 -rdynamic -std=c++11 -g3 -O0    -o CMakeFiles/server.dir/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp.o -c /home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp",
+  "file": "/home/shlian/demo/zeromq_demo/zmqpp/include/common.cpp"
+}
+]
