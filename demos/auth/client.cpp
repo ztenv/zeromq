@@ -32,12 +32,14 @@ int main()
     cout << "rc=" << rc <<endl;
 
     cout << "start to send msg" <<endl;
-    for(int i = 0; i<100; ++i) {
+    for(int i = 0; i<1000000000; ++i) {
         ostringstream oss;
         oss << i;
         auto res = zmq_send(requester, oss.str().c_str(), oss.str().length(), 0);
         cout << "send:" << oss.str() << endl;
+
         std::array<char, 1024> buf;
+        memset(buf.data(), 0, buf.max_size());
         res = zmq_recv(requester, buf.data(), buf.max_size(), 0);
 
         cout << "recv:" << buf.data() <<endl;

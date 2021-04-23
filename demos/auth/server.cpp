@@ -30,24 +30,20 @@ int main()
     int flag = 1;
     int rc = zmq_setsockopt(responser, ZMQ_PLAIN_SERVER, &flag, sizeof(flag));
     cout << "rc = " << rc << endl;
-    //const char *name = "admin";
-    //const char *pwd = "pwd";
-    //rc = zmq_setsockopt(responser, ZMQ_PLAIN_USERNAME, name, strlen(name));
-    //cout << "rc = " << rc << endl;
-    //rc = zmq_setsockopt(responser, ZMQ_PLAIN_PASSWORD, pwd, strlen(pwd));
-    //cout << "rc = " << rc << endl;
+
     rc = zmq_bind(responser, "tcp://127.0.0.1:55555");
     cout << "rc = " << rc << endl;
 
     cout << "start to work" << endl;
     while(true) {
-        std::array<char, 1024> buffer;
+        std::array<char, 1024> buff;
+        memset(buff.data(), 0, buff.max_size());
 
-        auto res = zmq_recv(responser, buffer.data(), buffer.max_size(), 0);
-        cout << "recv:" << buffer.data() <<endl;
+        auto res = zmq_recv(responser, buff.data(), buff.max_size(), 0);
+        cout << "recv:" << buff.data() <<endl;
 
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        res = zmq_send(responser, buffer.data(), res, 0);
+        res = zmq_send(responser, buff.data(), res, 0);
     }
 
     t.join();
