@@ -117,23 +117,27 @@ void build_reply(std::vector<char*> msg, void *socket, const char * status_code,
     int rc = zmq_msg_init_size(&p0, 5);
     memcpy(zmq_msg_data(&p0), msg[0], 5);       
     rc = zmq_msg_send(&p0, socket, ZMQ_SNDMORE);  // the dealer id
+    zmq_msg_close(&p0);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p1;
     rc = zmq_msg_init_size(&p1, 0);
     rc = zmq_msg_send(&p1, socket, ZMQ_SNDMORE);  //zero frame
+    zmq_msg_close(&p1);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p2;
     rc = zmq_msg_init_size(&p2, strlen(msg[2]));
     memcpy(zmq_msg_data(&p2), msg[2], strlen(msg[2])); // version
     rc = zmq_msg_send(&p2, socket, ZMQ_SNDMORE);
+    zmq_msg_close(&p2);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p3;
     rc = zmq_msg_init_size(&p3, strlen(msg[3]));
     memcpy(zmq_msg_data(&p3), msg[3], strlen(msg[3])); //sequence
     rc = zmq_msg_send(&p3, socket, ZMQ_SNDMORE);
+    zmq_msg_close(&p3);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p4;
@@ -141,6 +145,7 @@ void build_reply(std::vector<char*> msg, void *socket, const char * status_code,
     rc = zmq_msg_init_size(&p4, strlen(status_code));
     memcpy(zmq_msg_data(&p4), status_code, strlen(status_code)); //status_code
     rc = zmq_msg_send(&p4, socket, ZMQ_SNDMORE);
+    zmq_msg_close(&p4);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p5;
@@ -148,17 +153,20 @@ void build_reply(std::vector<char*> msg, void *socket, const char * status_code,
     rc = zmq_msg_init_size(&p5, strlen(status_text));
     memcpy(zmq_msg_data(&p5), status_code, strlen(status_text)); //status_text
     rc = zmq_msg_send(&p5, socket, ZMQ_SNDMORE);
+    zmq_msg_close(&p5);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p6;
     rc = zmq_msg_init_size(&p6, strlen(msg[8]));
     memcpy(zmq_msg_data(&p6), msg[8], strlen(msg[8])); //user_id/user_name
     rc = zmq_msg_send(&p6, socket, ZMQ_SNDMORE);
+    zmq_msg_close(&p6);
     cout << "send res:" << rc << endl;
 
     zmq_msg_t p7;
     rc = zmq_msg_init_size(&p7, 0);
     rc = zmq_msg_send(&p7, socket, 0);  //zero frame
+    zmq_msg_close(&p7);
     cout << "send res:" << rc << endl;
 
 }
