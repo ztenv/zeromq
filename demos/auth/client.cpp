@@ -26,7 +26,6 @@ int main()
 
     const char *id = "auth_request";
     rc = zmq_setsockopt(requester, ZMQ_ROUTING_ID, id, strlen(id));
-    //rc = zmq_setsockopt(requester, ZMQ_IDENTITY, id, strlen(id));
     cout << "rc=" << rc <<endl;
 
     rc = zmq_connect(requester, "tcp://127.0.0.1:55555");

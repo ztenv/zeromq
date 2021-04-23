@@ -17,6 +17,8 @@ using namespace std;
 
 void auth_server(void *context);
 
+void build_reply(std::vector<char*> msg, void *socket);
+
 int main()
 {
 
@@ -106,10 +108,59 @@ void auth_server(void *context) {
             char * pwd = msg[7];
             cout << "pwd:" << pwd << endl;
 
+            build_reply(msg, auth_socket);
+
             for_each(msg.begin(), msg.end(), [&](char * ele ) { delete [] ele ;});
             msg.clear();
-            break;
         }
     }
+}
+
+void build_reply(std::vector<char*> msg, void *socket) {
+    //zmq_msg_t p1;
+    //int rc = zmq_msg_init_size(&p1, 5);
+    //memcpy(zmq_msg_data(&p1), msg[0], 5);
+
+    //rc = zmq_msg_send(&p1, socket, ZMQ_SNDMORE);
+
+    int rc = 0;
+
+    zmq_msg_t p2;
+    rc = zmq_msg_init_size(&p2, strlen(msg[0]));
+    memcpy(zmq_msg_data(&p2), msg[0], strlen(msg[0]));
+    rc = zmq_msg_send(&p2, socket, ZMQ_SNDMORE);
+    cout << "send res:" << rc << endl;
+
+    zmq_msg_t p3;
+    rc = zmq_msg_init_size(&p3, strlen(msg[1]));
+    memcpy(zmq_msg_data(&p3), msg[1], strlen(msg[1]));
+    rc = zmq_msg_send(&p3, socket, ZMQ_SNDMORE);
+    cout << "send res:" << rc << endl;
+
+    zmq_msg_t p4;
+    const char * status_code = "200";
+    rc = zmq_msg_init_size(&p4, strlen(status_code));
+    memcpy(zmq_msg_data(&p4), status_code, strlen(status_code));
+    rc = zmq_msg_send(&p4, socket, ZMQ_SNDMORE);
+    cout << "send res:" << rc << endl;
+
+    zmq_msg_t p5;
+    const char * status_text = "ok";
+    rc = zmq_msg_init_size(&p5, strlen(status_text));
+    memcpy(zmq_msg_data(&p5), status_code, strlen(status_text));
+    rc = zmq_msg_send(&p5, socket, ZMQ_SNDMORE);
+    cout << "send res:" << rc << endl;
+
+    zmq_msg_t p6;
+    rc = zmq_msg_init_size(&p6, strlen(msg[6]));
+    memcpy(zmq_msg_data(&p6), msg[6], strlen(msg[6]));
+    rc = zmq_msg_send(&p6, socket, ZMQ_SNDMORE);
+    cout << "send res:" << rc << endl;
+
+    zmq_msg_t p7;
+    rc = zmq_msg_init_size(&p7, 0);
+    rc = zmq_msg_send(&p7, socket, 0);
+    cout << "send res:" << rc << endl;
+
 }
 

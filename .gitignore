@@ -36,3 +36,4 @@ bin/
 build/
 .clangd
 cmake-build-debug
+.cache
